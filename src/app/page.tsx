@@ -1,3 +1,9 @@
 export default function Home() {
-  return <p>Hello World</p>;
+  return (
+    <div>
+      <a href="#" className="h-full w-full bg-orange-400">
+        Button
+      </a>
+    </div>
+  );
 }
