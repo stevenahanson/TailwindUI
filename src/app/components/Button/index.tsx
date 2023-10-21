@@ -10,7 +10,7 @@ export default function Button() {
       <div className="w-full h-full flex items-center justify-center absolute">
         <a
           href="#"
-          className={`bg-blue-400 text-white text-5xl p-5 ${
+          className={`bg-blue-400 text-white text-5xl p-5 hover:bg-violet-500 rounded ${
             showButton ? "" : "hidden"
           }`}
           onClick={() => setShowButton(false)}
