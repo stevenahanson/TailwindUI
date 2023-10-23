@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Button() {
   const [showButton, setShowButton] = useState(true);
+  const imgSource = "/image/batman-bam.png";
 
   return (
     <>
@@ -17,6 +19,15 @@ export default function Button() {
         >
           Button
         </a>
+        <div>
+          <Image
+            className={`${showButton ? "hidden" : ""}`}
+            alt="bam"
+            width={200}
+            height={200}
+            src={imgSource}
+          />
+        </div>
       </div>
     </>
   );
